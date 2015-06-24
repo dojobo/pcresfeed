@@ -1,0 +1,7 @@
+---
+- name: location1
+  source: http://path/to/rss
+  destination: "//path/to/server's/Program Files (x86)/"
+- name: location2
+  source: http://path/to/rss
+  destination: "//path/to/server's/Program Files (x86)/"
