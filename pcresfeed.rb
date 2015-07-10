@@ -9,7 +9,7 @@ eventmax = 5  # how many events to show
 
 locations.each do |location|
   puts "doing #{location["name"]}"
-  open("#{location["destination"]}EnvisionWare/PC Reservation/Management Service/news_feed/en_us.rss", "w") do |file|
+  open("#{location["destination"]}en_us.rss", "w") do |file|
     feed = Nokogiri::XML.parse(open(location["source"]))
     title = feed.xpath("/rss/channel/title").first
     title.content = "Events @ Your Library!"
