@@ -11,7 +11,7 @@ Nokogiri: `gem install nokogiri` (as of this writing, doesn't work with ruby 2.2
 As long as you have the appropriate sharing and permission set up on PC Res servers, you should be good.
 
 ### On Linux:
-Since you are sending to Windows machines, you'll need to mount the SMB destinations. I used `sudo apt-get install cifs-utils` and then edited my `/etc/fstab/` to mount the destination directories as local ones. Beware that permissions can be an issue. YMMV.
+Since you are sending to Windows machines, you'll need to mount the SMB destinations. I used `sudo apt-get install cifs-utils` and then edited my `/etc/fstab` to mount the destination directories as local ones. Beware that permissions can be an issue. YMMV.
 
 ## How to use
 Open `locations-template.yml`. Replace the info there with yours, and copy-paste more entries as necessary. For example, if you're in a library branch system and are running an instance of PC Res for each branch, you'll need to account for each location here (and provide location-specific RSS if available). Save this file as `locations.yml`.
