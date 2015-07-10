@@ -3,7 +3,8 @@ require 'nokogiri'
 require 'open-uri'
 require 'psych'
 
-locations = Psych.load_file('locations.yml')
+locationspath = __dir__ + '/locations.yml'
+locations = Psych.load_file(locationspath) 
 #locations = [{"name"=>"test", "source"=>"http://ebrpl.evanced.info/signup/eventsxml.aspx?ag=&et=&lib=0&nd=31&dm=rss&LangType=0", "destination"=>"rss/test.rss"}]
 eventmax = 5  # how many events to show
 
